@@ -1,0 +1,7 @@
+diffusers>=0.18.0
+transformers>=4.30.0
+accelerate>=0.18.0
+safetensors
+pyyaml
+ipywidgets
+onnxruntime
