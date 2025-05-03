@@ -15,7 +15,7 @@ def generate_mesh_from_image():
     batch_size = 4
     guidance_scale = 3.0
 
-    image = load_image("PATH_0F_.obj_FILE")
+    image = load_image("PATH_0F_image_FILE")
 
     latents = sample_latents(
         batch_size=batch_size,
@@ -36,7 +36,7 @@ def generate_mesh_from_image():
 
     for i, latent in enumerate(latents):
         t = decode_latent_mesh(xm, latent).tri_mesh()
-        with open(f'chair_{i}.obj', 'w') as f:
+        with open(f'example_{i}.obj', 'w') as f:
             t.write_obj(f)
 
 if __name__ == '__main__':
