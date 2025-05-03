@@ -90,8 +90,7 @@ Convert a single-object photo into a 3D mesh.
 Edit the `image_to_3d.py` script directly:
 
 ```python
-input_path = "path/to/photo.jpg"
-out_path = "object_mesh.obj"
+image = load_image("PATH_0F_image_FILE")
 ```
 
 Then run:
@@ -115,7 +114,7 @@ Visualize any generated 3D mesh model (`.obj` format) interactively using `viz.p
 Edit the `viz.py` script directly:
 
 ```python
-file_path = "path/to/mesh.obj"
+mesh = trimesh.load('PATH_0F_.obj_FILE', force='mesh')
 ```
 
 Then run:
